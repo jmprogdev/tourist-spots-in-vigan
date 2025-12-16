@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: #000000; /* Vigan's signature brick-red color */
+    color: rgb(255, 255, 255);
+    padding: 2px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#map {
+    width: 60%; /* Map takes 60% of the container width */
+    height: 600px; /* IMPORTANT: Map container must have a fixed height */
+    border-right: 2px solid #ddd;
+}
+
+#info-panel {
+    width: 40%; /* Info panel takes 40% of the container width */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Allow scrolling for long descriptions */
+}
+
+#info-panel h2 {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+#spot-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#spot-details h3 {
+    margin-top: 0;
+    color: #444;
+}
+
+#spot-details p {
+    line-height: 1.6;
+    color: #555;
+}
+
+link{
+    text-decoration: none;
+}

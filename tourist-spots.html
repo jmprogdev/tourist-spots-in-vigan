@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vigan Tourist Spots</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="nav-container">
+        <h1 class="logo">Vigan City Wonder Tour</h1>
+
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <nav id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="tourist-spots.html">Tourist Spots</a>
+            <a href="tourist-map.html">Map</a>
+        </nav>
+    </div>
+</header>
+
+<section class="spots-section-container">
+
+    <h2 class="grid-label">Tourist Spots</h2>
+    <section class="spots-grid">
+    
+        <div class="spot-card">
+            <div class="spot-carousel" data-index="0">
+                <img src="images/callecrisologo2.jpg" class="active">
+                <img src="images/callecrisologo.jpg">
+                <button class="spot-btn prev" onclick="changeSlide(this,-1)">❮</button>
+                <button class="spot-btn next" onclick="changeSlide(this,1)">❯</button>
+            </div>
+            <div class="spot-info">
+                <h3>Calle Crisologo</h3>
+                <p>This is Vigan's most iconic street, lined with ancestral houses from
+                    the Spanish colonial era. What to do here is take a walk or, better yet,
+                    a kalesa ride, especially at night when the street lamps cast a warm, vintage glow.</p>
+                <h4>History & Trivia</h4>
+                <p>The houses are famous for their bahay na bato architecture, combining stone ground floors
+                    and wooden upper floors with sliding windows made of capiz shells. It is said that the 
+                    street was saved from destruction during World War II because a Japanese officer married
+                    to a local woman intervened, preserving the priceless heritage.</p>
+            </div>
+        </div>
+
+        <div class="spot-card">
+            <div class="spot-carousel" data-index="0">
+                <img src="images/plaza_salcedo.jpg" class="active">
+                <img src="images/plaza_salcedo2.jpg">
+                <button class="spot-btn prev" onclick="changeSlide(this,-1)">❮</button>
+                <button class="spot-btn next" onclick="changeSlide(this,1)">❯</button>
+            </div>
+            <div class="spot-info">
+                <h3>Plaza Salcedo</h3>
+                <p>The city's main public square, centrally located and surrounded by important
+                    government and religious buildings like the Vigan Cathedral and the Provincial Capitol. 
+                    The main attraction here is the Dancing Fountain Show held in the evening, show of lights, water, and music.</p>
+                <h4>History & Trivia</h4>
+                <p>Plaza Salcedo is the historical heart of Vigan, named for city founder Juan de Salcedo. It is the central square 
+                    surrounded by the Vigan Cathedral and the Provincial Capitol. Its most notable historical event was the execution
+                    of the revolutionary heroine Gabriela Silang in 1763. A key piece of trivia is its large pool, which was originally 
+                    installed as a firefighting water reservoir but is now famous for hosting the nightly Dancing Fountain Show.</p>     
+            </div>
+        </div>
+
+        <div class="spot-card">
+            <div class="spot-carousel" data-index="0">
+                <img src="images/plaza_burgos.jpg" class="active">
+                <img src="images/plaza_burgos2.jpg">
+                <button class="spot-btn prev" onclick="changeSlide(this,-1)">❮</button>
+                <button class="spot-btn next" onclick="changeSlide(this,1)">❯</button>
+            </div>
+            <div class="spot-info">
+                <h3>Plaza Burgos</h3>
+                <p>Located right beside the Vigan Cathedral and Plaza Salcedo, this square is a favorite spot for 
+                    locals and tourists to relax and enjoy Vigan's famous local street food and lutong bahay. You must 
+                    try the Vigan Empanada and Okoy here!</p>
+                <h4>History & Trivia</h4>
+                <p>The plaza is named in honor of the native priest and martyr Father Jose Burgos, who was one of the three
+                    GomBurZa priests executed by the Spanish.</p>    
+            </div>
+        </div>
+    </section>
+    <h2 class="grid-label">Cultural and Religious Landmarks</h2>
+    <section class="spots-grid">
+
+        <div class="spot-card">
+            <div class="spot-carousel" data-index="0">
+                <img src="images/vigan_cathedral.jpg" class="active">
+                <img src="images/vigan_cathedral2.jpg">
+                <button class="spot-btn prev" onclick="changeSlide(this,-1)">❮</button>
+                <button class="spot-btn next" onclick="changeSlide(this,1)">❯</button>
+            </div>
+            <div class="spot-info">
+                <h3>Vigan Cathedral</h3>
+                <p>A majestic Roman Catholic church dominating the central plaza. Its massive structure follows the Earthquake 
+                    Baroque style, common in the Philippines, which features thick buttresses to withstand earthquakes.</p>
+                <h4>History & Trivia</h4>
+                <p>The current stone church was built in the 18th century. Its octagonal bell tower is separated from the main
+                    church building, a strategic design to prevent the tower from crushing the church during a strong earthquake.</p> 
+            </div>
+        </div>
+
+        <div class="spot-card">
+            <div class="spot-carousel" data-index="0">
+                <img src="images/pagburnayan.jpg" class="active">
+                <img src="images/pagburnayan2.jpg">
+                <button class="spot-btn prev" onclick="changeSlide(this,-1)">❮</button>
+                <button class="spot-btn next" onclick="changeSlide(this,1)">❯</button>
+            </div>
+            <div class="spot-info">
+                <h3>Pagburnayan</h3>
+                <p>This is a traditional pottery workshop where you can see the centuries-old method of making the famous burnay or earthen jars.
+                    The best thing to do is try your hand at shaping the clay on the potter's wheel.</p>
+                <h4>History & Trivia</h4>
+                <p>The craft of making burnay dates back to the pre-colonial era and was influenced by Chinese traders. The jars are typically used 
+                    for fermenting local products like basi (sugarcane wine) and bagoong (fish paste).</p> 
+            </div>
+        </div>
+
+        <div class="spot-card">
+            <div class="spot-carousel" data-index="0">
+                <img src="images/nationalmuseum.jpg" class="active">
+                <img src="images/national_museum.jpg">
+                <button class="spot-btn prev" onclick="changeSlide(this,-1)">❮</button>
+                <button class="spot-btn next" onclick="changeSlide(this,1)">❯</button>
+            </div>
+            <div class="spot-info">
+                <h3>Ilocos Regional Museum</h3>
+                <p>This museum, housed in the ancestral home of Father Jose Burgos, features historical artifacts, the 14 Basi Revolt paintings 
+                    (depicting a revolt against the Spanish monopoly on sugarcane wine), and ethnographical materials related to the Ilocos region.</p>
+                <h4>History & Trivia</h4>
+                <p>The house itself is a beautiful example of a wealthy bahay na bato and provides insight into the life of the Filipino elite during the
+                    Spanish era. It was also the former location of the Provincial Jail (Carcel), where President Elpidio Quirino was born (his father was a warden).</p> 
+            </div>
+        </div>
+    </section>
+    <h2 class="grid-label">Unique Destinations</h2>
+    <section class="spots-grid">
+
+        <div class="spot-card">
+            <div class="spot-carousel" data-index="0">
+                <img src="images/baluarte2.jpg" class="active">
+                <img src="images/baluarte.jpg">
+                <button class="spot-btn prev" onclick="changeSlide(this,-1)">❮</button>
+                <button class="spot-btn next" onclick="changeSlide(this,1)">❯</button>
+            </div>
+            <div class="spot-info">
+                <h3>Baluarte Zoo</h3>
+                <p>A government-owned and managed mini-zoo and conservation center, famous for its various animals, including ostriches, tigers, and a number of exotic birds. 
+                    A must-do is watching the Animal Show.</p>
+                <h4>History & Trivia</h4>
+                <p>Owned by former Ilocos Sur Governor Luis "Chavit" Singson, it is often referred to as a "safari gallery" and advocates for animal welfare and conservation. </p> 
+            </div>
+        </div>
+
+        <div class="spot-card">
+            <div class="spot-carousel" data-index="0">
+                <img src="images/hiddengarden.jpg" class="active">
+                <img src="images/hiddengarden2.jpg">
+                <button class="spot-btn prev" onclick="changeSlide(this,-1)">❮</button>
+                <button class="spot-btn next" onclick="changeSlide(this,1)">❯</button>
+            </div>
+            <div class="spot-info">
+                <h3>Hidden Garden</h3>
+                <p>Despite its name, this place is well-known and is a relaxing spot that functions as a nursery for various plants and a restaurant serving classic Ilocano cuisine. 
+                    The thing to do here is to relax and have a snack or meal.</p>
+                <h4>History & Trivia</h4>
+                <p>It was developed by a local couple, Francis and Maria Goulart, and is known for its quiet, provincial ambiance, offering a tranquil escape from the bustling city center.</p> 
+            </div>
+        </div>
+
+        <div class="spot-card">
+            <div class="spot-carousel" data-index="0">
+                <img src="images/oneilocossurcafe.jpg" class="active">
+                <img src="images/one_ilocos_sur_cafe.jpg">
+                <button class="spot-btn prev" onclick="changeSlide(this,-1)">❮</button>
+                <button class="spot-btn next" onclick="changeSlide(this,1)">❯</button>
+            </div>
+            <div class="spot-info">
+                <h3>One Ilocos Sur Cafe</h3>
+                <p>While not a historic landmark, a cafe like this, which is often found within a restored ancestral house, is a great place to experience the modern-day local culture while
+                    appreciating the classic architecture. The best thing to do is try their local coffee blends and pastries.</p>
+                <h4>History & Trivia</h4>
+                <p>The adaptive reuse of old heritage structures into commercial spaces like cafes and restaurants helps fund the preservation of Vigan's unique architectural heritage, 
+                    allowing tourists to appreciate the interiors of these old homes.</p> 
+            </div>
+        </div>
+    </section>
+    </section> <section class="map-cta">
+    <h2>Want to see them on the map?</h2>
+    <a href="tourist-map.html" class="btn">
+        View Interactive Tourist Map
+    </a>
+</section>
+
+<footer>
+    <p>© 2025 Vigan City Wonder Tour | All Rights Reserved</p>
+</footer>
+
+<script>
+function changeSlide(button, direction) {
+    const carousel = button.closest(".spot-carousel");
+    const images = carousel.querySelectorAll("img");
+    let index = parseInt(carousel.dataset.index);
+
+    images[index].classList.remove("active");
+
+    index += direction;
+    if (index < 0) index = images.length - 1;
+    if (index >= images.length) index = 0;
+
+    images[index].classList.add("active");
+    carousel.dataset.index = index;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
+});
+</script>
+</body>
+</html>

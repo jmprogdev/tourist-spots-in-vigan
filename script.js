@@ -5,7 +5,7 @@ const touristSpots = [
         lat: 17.5714,
         lng: 120.3887,
         description: "A UNESCO World Heritage Site famous for its Spanish colonial architecture and cobblestone streets. It is the heart of Vigan's historical center.",
-        imageUrl: "images/calle_crisologo.jpg" 
+        imageUrl: "images/callecrisologo.jpg" 
     },
     {
         name: "Vigan Cathedral (St. Paul Metropolitan Cathedral)",
@@ -33,21 +33,21 @@ const touristSpots = [
         lat: 17.5513,
         lng: 120.3771,
         description: "An interactive zoo owned by former Governor Chavit Singson. Famous for its mini-safari experience and the unique realistic tiger enclosure.",
-        imageUrl: "images/baluarte_zoo.jpg" 
+        imageUrl: "images/baluarte2.jpg" 
     },
     {
         name: "Pagburnayan (Jar Making)",
         lat: 17.5709,
         lng: 120.3820,
         description: "A traditional pottery site where local artisans demonstrate the age-old method of making *burnay*, a local earthenware jar, by hand.",
-        imageUrl: "images/pagburnayan.jpg"
+        imageUrl: "images/pagburnayan2.jpg"
     },
     {
         name: "Hidden Garden",
         lat: 17.5597,
         lng: 120.3651,
         description: "A tranquil sanctuary known for its lush plant nursery, garden cafe, and Ilocano food, offering a peaceful escape from the city hustle.",
-        imageUrl: "images/hidden_garden.jpg"
+        imageUrl: "images/hiddengarden.jpg"
     },
     {
         name: "National Museum - Ilocos Regional Museum Complex",
@@ -61,7 +61,7 @@ const touristSpots = [
         lat: 17.5765,
         lng: 120.3868,
         description: "A popular modern cafe and restaurant offering a mix of local Ilocano cuisine and contemporary coffee drinks.",
-        imageUrl: "images/one_ilocos_sur_cafe.jpg"
+        imageUrl: "images/oneilocossurcafe.jpg"
     }
 ];
 
@@ -101,3 +101,14 @@ function updateInfoPanel(spot) {
         <p>${spot.description}</p>
     `;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
+});
